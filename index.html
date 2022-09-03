@@ -7,49 +7,70 @@
     <title>Rosemary Ellery Portfolio</title>
     <link rel="stylesheet" href="./resources/css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
 </head>
 <body>
     <header>
-        <div class="navbar"></div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <nav class="navlinks">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
         </div>
         <div class="home">
             <h1>Rosemary Ellery</h1>
-            <p>Systems Engineering Student</p>
+            <div class="caption">
+                <p>Systems Engineering Student</p>
+            </div>
         </div>
     </header>
     <div class="projects">
-        <div class="project-card">
-            <div class="project-img">
-                <img src="https://d1rytvr7gmk1sx.cloudfront.net/wp-content/uploads/2022/06/webstorm-vs-vscode.jpeg?x27457"/>
+        <div class="project-item">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="resources/images/logicgatevisualiserimage.png"/>
+                </div>
+                <div class="project-info">
+                    <h1 class="project-title">Perceptron Logic Gates Visualiser</h1>
+                    <hr class="project-divider"/>
+                    <p class="project-description">An app developed using the Django web framework that allows users to select a common logic gate, train a perceptron for its functionality, and view the resulting decision boundary plot.</p>
+                    <div class="project-tag">Python</div>
+                    <div class="project-tag">Django</div>
+                    <div class="project-tag">HTML/CSS</div>
+                    <div class="project-tag">Git</div>
+                </div>
+                <div class="hover-card">
+                    <h3>Visit Project</h3>
+                    <div class="icons">
+                        <div class="icon">
+                            <i class="fa fa-github"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-link" style="font-size:2.5rem"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project-info">
-                <h1 class="project-title">Message Generator</h1>
-                <hr class="project-divider"/>
-                <p class="project-description">In this video tutorial you will learn how to build a beautiful responsive news blog post card using html and css. We will be using many properties including flexbox to achieve our layout. You will also learn how to use media queries to make the card adapt to any screen size.</p>
-                <div class="project-tag">Python</div>
-                <div class="project-tag">Neo4j</div>
-            </div>
+            
         </div>
         <div class="project-card">
             <div class="project-img">
                 <img src="https://thumbs.dreamstime.com/b/financial-stock-market-graph-bar-chart-price-display-dark-background-144415855.jpg"/>
             </div>
             <div class="project-info">
-                <h1 class="project-title">Machine Learning Project</h1>
+                <h1 class="project-title">Wiki-Holes Web App</h1>
                 <hr class="project-divider"/>
-                <p class="project-description">In this video tutorial you will learn how to build a beautiful responsive news blog post card using html and css. We will be using many properties including flexbox to achieve our layout. You will also learn how to use media queries to make the card adapt to any screen size.</p>
-                <div class="project-tag">Python</div>
-                <div class="project-tag">Numpy</div>
+                <p class="project-description">Made use of the Wikipedia API to build a web app where users can search Wikipedia for articles and save topics into 'wiki-holes'.</p>
+                <div class="project-tag">JavaScript</div>
+                <div class="project-tag">React</div>
                 <div class="project-tag">Pandas</div>
             </div>
         </div>
