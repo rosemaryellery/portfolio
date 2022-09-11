@@ -102,11 +102,37 @@ a {
     color: white;
     text-align: center;
     margin-bottom: 10rem;
-    padding: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .skills h1 {
     font-size: 60px;
+    margin-bottom: 2rem;
+    /* z-index: 2; */
+}
+
+.skills p {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    /* z-index: 2; */
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color:#ff7c0a;
+    overflow: hidden;
+    width: 0;
+    height: 10%;
+    transition: .5s ease;
+    /* z-index: 1; */
+    object-fit: contain;
+}
+
+.skills:hover .overlay{
+    width: 100%;
 }
 
 .wave-bottom {
@@ -232,8 +258,6 @@ a {
 
 .footer-wave {
     position: relative;
-    bottom: 0;
-    left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;

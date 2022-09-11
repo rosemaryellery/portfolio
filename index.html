@@ -21,19 +21,19 @@
                 <path fill="#FF7C0A" d="M36.1,-54.9C45.3,-50.3,50.2,-37.7,56.6,-25.4C62.9,-13,70.7,-0.9,69,9.9C67.4,20.6,56.4,30,46.5,39C36.7,48,27.9,56.7,18.5,56.4C9.1,56.1,-0.9,46.8,-14.8,45.1C-28.7,43.5,-46.5,49.6,-51.9,44.4C-57.3,39.2,-50.3,22.7,-50.5,8.5C-50.6,-5.8,-57.9,-17.7,-57.8,-29.9C-57.7,-42,-50.3,-54.3,-39.4,-58.2C-28.6,-62,-14.3,-57.4,-0.4,-56.8C13.5,-56.1,26.9,-59.5,36.1,-54.9Z" transform="translate(100 100)" />
             </svg>
         </div> -->
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <nav class="navlinks">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#navbar">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li></li>
                     <li></li>
                 </ul>
             </nav>
         </div>
-        <div class="home">
+        <div class="home" id="home">
             <h1>Rosemary <span style="color:#ff7c0a;">Ellery</span></h1>
             <div class="caption">
                 <p>Systems Engineering Student</p>
@@ -46,8 +46,10 @@
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>
     </div> -->
-    <div class="skills">
+    <div class="skills" id="skills">
         <h1>Skills</h1>
+        <p>Python (inc. Django) - JavaScript (inc. React.js, Node.js) - C++ - HTML/CSS - MATLAB/Simulink - Neo4j - SQL/CQL - Git </p>
+        <!-- <div class="overlay"></div> -->
     </div>
     <!-- <div class="wave-bottom">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -55,34 +57,7 @@
         </svg>
     </div> -->
 
-    <div class="projects">
-        <div class="project-item">
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="resources/images/logicgatevisualiserimage.png"/>
-                </div>
-                <div class="project-info">
-                    <h1 class="project-title">Perceptron Logic Gates Visualiser</h1>
-                    <hr class="project-divider"/>
-                    <p class="project-description">An app developed using the Django web framework that allows users to select a common logic gate, train a perceptron for its functionality, and view the resulting decision boundary plot.</p>
-                    <div class="project-tag">Python</div>
-                    <div class="project-tag">Django</div>
-                    <div class="project-tag">HTML/CSS</div>
-                    <div class="project-tag">Git</div>
-                </div>
-                <div class="hover-card">
-                    <h3>Visit Project</h3>
-                    <div class="icons">
-                        <div class="icon">
-                            <i class="fa fa-github"></i>
-                        </div>
-                        <div class="icon">
-                            <i class="fa fa-link" style="font-size:2.5rem"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="projects" id="projects">
         <div class="project-item">
             <div class="project-card">
                 <div class="project-img">
@@ -101,10 +76,40 @@
                     <h3>Visit Project</h3>
                     <div class="icons">
                         <div class="icon">
-                            <i class="fa fa-github"></i>
+                            <a href="https://rosemaryellery.github.io/wiki-holes/" target="_blank">
+                                <i class="fa fa-link"></i>
+                            </a>
                         </div>
                         <div class="icon">
-                            <i class="fa fa-link" style="font-size:2.5rem"></i>
+                            <a href="https://github.com/rosemaryellery/wiki-holes" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="resources/images/logicgatevisualiserimage.png"/>
+                </div>
+                <div class="project-info">
+                    <h1 class="project-title">Perceptron Logic Gates Visualiser</h1>
+                    <hr class="project-divider"/>
+                    <p class="project-description">An app developed using the Django web framework that allows users to select a common logic gate, train a perceptron for its functionality, and view the resulting decision boundary plot.</p>
+                    <div class="project-tag">Python</div>
+                    <div class="project-tag">Django</div>
+                    <div class="project-tag">HTML/CSS</div>
+                    <div class="project-tag">Git</div>
+                </div>
+                <div class="hover-card">
+                    <h3>Visit Project</h3>
+                    <div class="icons">
+                        <div class="icon">
+                            <a href="https://github.com/rosemaryellery/logic-gates-visualiser" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -126,10 +131,14 @@
                     <h3>Visit Project</h3>
                     <div class="icons">
                         <div class="icon">
-                            <i class="fa fa-github"></i>
+                            <a href="https://github.com/rosemaryellery/portfolio" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
                         </div>
                         <div class="icon">
-                            <i class="fa fa-link" style="font-size:2.5rem"></i>
+                            <a href="#navbar">
+                                <i class="fa fa-link" style="font-size:2.5rem"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +150,7 @@
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>
     </div> -->
-    <footer>
+    <footer id="contact">
         <h1>Contact me:</h1>
         <div class="icons">
             <div class="icon">
