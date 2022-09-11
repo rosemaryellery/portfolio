@@ -65,6 +65,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 .home{
     margin-top: 5%;
@@ -89,13 +93,16 @@ nav ul li a:hover::after{
     width: 100%;
     overflow: hidden;
     line-height: 0;
+
+
 }
 
 .skills {
     background-color: black;
-    height: 20rem;
     color: white;
     text-align: center;
+    margin-bottom: 10rem;
+    padding: 0;
 }
 
 .skills h1 {
@@ -123,6 +130,7 @@ nav ul li a:hover::after{
     display: block;
     border-radius: 1rem;
     margin-left: 1.5rem;
+    border: 2px solid black;
 
 }
 
@@ -144,13 +152,12 @@ nav ul li a:hover::after{
 
 .hover-card {
     position: absolute;
-    width: 100%;
-    max-width: 98rem;
-    height: 100%;
-    background-color: #ff7c0a;
+    width: 100.08%;
+    height: 100.08%;
+    background-color: black;
     position: absolute;
-    border: 3px solid #ff7c0a;
-    border-radius: 1rem;
+    border: 3px solid black;
+    border-radius: 0.8rem;
     left: 0;
     top: 0;
     object-fit: contain;
@@ -192,8 +199,7 @@ nav ul li a:hover::after{
 }
 
 .icon:hover{
-    background-color: black;
-    color: white;
+    background-color:#ff7c0a;
 }
 
 .project-info{
@@ -237,5 +243,12 @@ nav ul li a:hover::after{
 footer {
     background: black;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 1.5rem;
+    margin-top: 10rem;
 }
