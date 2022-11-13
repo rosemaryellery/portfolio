@@ -18,10 +18,6 @@ header{
     overflow: hidden;
 }
 
-.blob-parent {
-    
-}
-
 .top-blob{
     transform: translate();
 }
@@ -77,8 +73,20 @@ a {
 
 .home h1{
     font-size: 60px;
-    margin-top: 27rem;
+    margin-top: 18%;
     text-align: center;
+}
+
+.home h1 #lastname {
+    color: #ff7c0a;
+}
+
+.home h1:hover #firstname{
+    color: #ff7c0a;
+}
+
+.home h1:hover #lastname{
+    color: black;
 }
 
 .caption p {
@@ -93,8 +101,6 @@ a {
     width: 100%;
     overflow: hidden;
     line-height: 0;
-
-
 }
 
 .skills {
